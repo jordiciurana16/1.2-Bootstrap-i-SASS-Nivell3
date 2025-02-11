@@ -1,10 +1,18 @@
 $primary: #5065dc;
 $secondary: #fb5859;
+$dark: #242946;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "dark": $dark,
 );
 
-// Importa Bootstrap correctament
+$btn-border-radius: 0.25rem;
+
 @import "node_modules/bootstrap/scss/bootstrap";
+
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
