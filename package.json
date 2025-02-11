@@ -1,0 +1,25 @@
+{
+  "name": "1.2-bootstrap-i-sass-nivell3",
+  "version": "1.0.0",
+  "description": "Aquest projecte consisteix en la creació d'una landing page utilitzant Bootstrap i SASS que s'adapti correctament a diferents dispositius, incloent-hi escriptoris, tauletes i mòbils.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordiciurana16/1.2-Bootstrap-i-SASS-Nivell3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jordiciurana16/1.2-Bootstrap-i-SASS-Nivell3/issues"
+  },
+  "homepage": "https://github.com/jordiciurana16/1.2-Bootstrap-i-SASS-Nivell3#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.84.0"
+  }
+}
