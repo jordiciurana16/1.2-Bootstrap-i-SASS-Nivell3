@@ -1,30 +1,27 @@
 $primary: #5065dc;
 $secondary: #fb5859;
 $dark: #242946;
+$light: #ededed;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "dark": $dark,
+  "light": $light,
 );
 
 $btn-border-radius: 0.2rem;
+$btn-box-shadow: 0 2px 4px rgba($primary, 0.2);
 $card-border-radius: 0.5rem;
 $card-border-color: transparent;
 $card-box-shadow: 0 4px 8px rgba($primary, 0.2);
 
-$btn-padding-y: 0.5rem; // Increased vertical padding
-$btn-padding-x: 0.75rem; // Increased horizontal padding
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 0.75rem;
 
-// Apply the same border radius and padding to inputs
 $input-border-radius: $btn-border-radius;
 $input-padding-y: $btn-padding-y;
 $input-padding-x: $btn-padding-x;
-
-// Custom styles for Bootstrap accordion
-$accordion-border-radius: 0; // Remove border radius
-$accordion-border-width: 1px; // Set border width
-$accordion-border-color: #dee2e6; // Set border color
 
 .accordion-item {
   border-left: 0 !important; // Remove left border
@@ -43,6 +40,14 @@ $accordion-border-color: #dee2e6; // Set border color
   }
 }
 
+.footer-text {
+  max-width: 400px;
+}
+
+.text-center.w-50.mx-auto.mb-5 {
+  max-width: 400px;
+}
+
 .bg-figure {
   position: absolute;
   bottom: -25px;
@@ -52,6 +57,19 @@ $accordion-border-color: #dee2e6; // Set border color
   background-color: $primary;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
+  z-index: -1;
+}
+
+.bg-figure-2 {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+
+  width: 500px;
+  height: 250px;
+  background-color: $primary;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
   z-index: -1;
 }
 
