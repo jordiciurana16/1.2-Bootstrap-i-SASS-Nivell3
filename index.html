@@ -44,25 +44,36 @@
       </nav>
     </header>
     <main>
-      <section class="container px-5 mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>A Simple Bookmark Manager</h1>
-            <p>
-              A clean and simple interface to organize your favourtie websites.
-              Open a new browser tab and see your sites load instantly. Try it
-              for free.
-            </p>
-            <div class="d-flex">
-              <button class="btn btn-primary me-2 text-white">
-                Get it on Chrome
-              </button>
-              <button class="btn btn-outline-primary">Get it on Firefox</button>
+      <div class="position-relative">
+        <section class="container px-5 mt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>A Simple Bookmark Manager</h1>
+              <p>
+                A clean and simple interface to organize your favourtie
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+              <div class="d-flex">
+                <button class="btn btn-primary me-2 text-white">
+                  Get it on Chrome
+                </button>
+                <button class="btn btn-outline-primary">
+                  Get it on Firefox
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="assets/images/illustration-hero.svg"
+                alt="Illustration Hero"
+                class="img-fluid"
+              />
             </div>
           </div>
-          <div class="col-md-6"></div>
-        </div>
-      </section>
+          <div class="bg-figure"></div>
+        </section>
+      </div>
       <section class="container px-5 mt-5">
         <div class="text-center">
           <h2>Features</h2>
@@ -106,7 +117,7 @@
         </div>
         <div class="row mt-4">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card card-custom">
               <div class="card-body text-center">
                 <img
                   src="assets/images/logo-chrome.svg"
@@ -117,6 +128,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">
                   Minimum version 62
                 </h6>
+                <hr class="dotted" />
                 <button class="btn btn-primary text-white">
                   Add & install extension
                 </button>
@@ -124,7 +136,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mt-2">
+            <div class="card card-custom mt-2">
               <div class="card-body text-center">
                 <img
                   src="assets/images/logo-firefox.svg"
@@ -135,6 +147,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">
                   Minimum version 55
                 </h6>
+                <hr class="dotted" />
                 <button class="btn btn-primary text-white">
                   Add & install extension
                 </button>
@@ -142,7 +155,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mt-4">
+            <div class="card card-custom mt-4">
               <div class="card-body text-center">
                 <img
                   src="assets/images/logo-opera.svg"
@@ -153,6 +166,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">
                   Minimum version 46
                 </h6>
+                <hr class="dotted" />
                 <button class="btn btn-primary text-white">
                   Add & install extension
                 </button>
@@ -163,13 +177,13 @@
       </section>
       <section class="container px-5 mt-5 text-center">
         <div>
-          <h2>FAQ</h2>
+          <h2>Frequently Asked Question</h2>
           <p class="text-center w-50 mx-auto">
             Here are some of the frequently asked questions. If you have any
             other questions, feel free to contact us.
           </p>
         </div>
-        <div class="accordion" id="faqAccordion">
+        <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
@@ -180,16 +194,26 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Question 1
+                Accordion Item #1
               </button>
             </h2>
             <div
               id="collapseOne"
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
-              data-bs-parent="#faqAccordion"
+              data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">Answer to question 1.</div>
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -202,16 +226,26 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Question 2
+                Accordion Item #2
               </button>
             </h2>
             <div
               id="collapseTwo"
               class="accordion-collapse collapse"
               aria-labelledby="headingTwo"
-              data-bs-parent="#faqAccordion"
+              data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">Answer to question 2.</div>
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -224,38 +258,26 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Question 3
+                Accordion Item #3
               </button>
             </h2>
             <div
               id="collapseThree"
               class="accordion-collapse collapse"
               aria-labelledby="headingThree"
-              data-bs-parent="#faqAccordion"
+              data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">Answer to question 3.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                Question 4
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">Answer to question 4.</div>
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
           </div>
         </div>
@@ -264,36 +286,40 @@
     </main>
     <footer class="bg-primary mt-5">
       <div class="text-center py-5">
-        <p class="text-center w-50 mx-auto text-white">
+        <p class="text-center w-50 mx-auto text-white footer-text">
           35,000+ ALREADY JOINED
         </p>
-        <h2 class="text-white">Stay up-to-date with what we're doing</h2>
+        <h2 class="text-white text-center mb-4">
+          Stay up-to-date with what we're doing
+        </h2>
         <form class="d-flex justify-content-center w-50 mx-auto">
           <input
             type="email"
-            class="form-control me-2"
-            placeholder="example@gmail.com"
+            class="form-control me-2 footer-input"
+            placeholder="Enter you email address"
           />
           <button class="btn btn-secondary text-white">Contact Us</button>
         </form>
       </div>
-      <div class="bg-dark text-white p-3">
-        <div class="container px-5 d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="bg-dark text-white py-4 px-5">
+        <div
+          class="container px-5 d-flex justify-content-between align-items-center"
+        >
+          <div class="d-flex flex-row align-items-center">
             <img
               src="assets/images/logo-bookmark-white.svg"
               alt="BOOKMARK Logo"
               height="30"
-              class="me-3"
+              class="me-5"
             />
-            <ul class="list-unstyled d-flex flex-row me-3">
-              <li class="me-2">FEATURES</li>
-              <li class="me-2">PRICING</li>
+            <ul class="list-unstyled d-flex flex-row me-4 mb-0">
+              <li class="me-5">FEATURES</li>
+              <li class="me-5">PRICING</li>
               <li>CONTACT</li>
             </ul>
           </div>
-          <div class="d-flex flex-row">
-            <ul class="list-unstyled d-flex flex-row">
+          <div class="d-flex flex-row align-items-center">
+            <ul class="list-unstyled d-flex flex-row mb-0">
               <li class="me-5">
                 <img
                   src="assets/images/icon-facebook.svg"
@@ -315,5 +341,6 @@
         </div>
       </div>
     </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

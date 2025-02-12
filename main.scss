@@ -8,11 +8,57 @@ $theme-colors: (
   "dark": $dark,
 );
 
-$btn-border-radius: 0.25rem;
+$btn-border-radius: 0.2rem;
+$card-border-radius: 0.5rem;
+$card-border-color: transparent;
+$card-box-shadow: 0 4px 8px rgba($primary, 0.2);
+
+$btn-padding-y: 0.5rem; // Increased vertical padding
+$btn-padding-x: 0.75rem; // Increased horizontal padding
+
+// Apply the same border radius and padding to inputs
+$input-border-radius: $btn-border-radius;
+$input-padding-y: $btn-padding-y;
+$input-padding-x: $btn-padding-x;
+
+// Custom styles for Bootstrap accordion
+$accordion-border-radius: 0; // Remove border radius
+$accordion-border-width: 1px; // Set border width
+$accordion-border-color: #dee2e6; // Set border color
+
+.accordion-item {
+  border-left: 0 !important; // Remove left border
+  border-right: 0 !important; // Remove right border
+}
+
+.card-custom {
+  box-shadow: $card-box-shadow;
+  .card-body {
+    padding: 2rem 0;
+  }
+  hr.dotted {
+    border: 0;
+    border-top: 7px dotted rgb(201, 201, 201);
+    margin: 3rem 0 2rem 0;
+  }
+}
+
+.bg-figure {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 500px;
+  height: 250px;
+  background-color: $primary;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  z-index: -1;
+}
+
+.footer-input {
+  padding: $input-padding-y $input-padding-x;
+  max-width: 300px;
+  border-radius: $input-border-radius;
+}
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
-p {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
