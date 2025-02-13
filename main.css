@@ -13,15 +13,7 @@
 .card-custom hr.dotted {
   border: 0;
   border-top: 7px dotted rgb(201, 201, 201);
-  margin: 2rem 0 2rem 0;
-}
-
-.card-custom.second {
-  margin-top: 2rem;
-}
-
-.card-custom.third {
-  margin-top: 4rem;
+  margin: 3rem 0 2rem 0;
 }
 
 .footer-text {
@@ -60,6 +52,10 @@
   padding: 0.5rem 0.75rem;
   max-width: 300px;
   border-radius: 0.2rem;
+}
+
+h6, .h6 {
+  color: #6c757d;
 }
 
 /*!
@@ -11651,23 +11647,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
-body {
-  font-family: "Rubik", sans-serif;
-}
-
-h6, .h6 {
-  color: #6c757d;
-  padding: 1rem 0;
-  line-height: 1.5rem;
-}
-
-.features-section .border-secondary {
-  border-width: 5px !important;
-  border-color: #fb5859 !important;
-  z-index: 3 !important;
-}
-
-.features-section .feature-image {
-  margin-right: 2rem;
 }/*# sourceMappingURL=main.css.map */
