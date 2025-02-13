@@ -1,3 +1,4 @@
+// Theme colors
 $primary: #5065dc;
 $secondary: #fb5859;
 $dark: #242946;
@@ -10,24 +11,38 @@ $theme-colors: (
   "light": $light,
 );
 
+// Button styles
 $btn-border-radius: 0.2rem;
 $btn-box-shadow: 0 2px 4px rgba($primary, 0.2);
 $btn-padding-y: 0.5rem;
 $btn-padding-x: 0.75rem;
 
+// Card styles
 $card-border-radius: 0.5rem;
 $card-border-color: transparent;
 $card-box-shadow: 0 4px 8px rgba($primary, 0.2);
 
+// Input styles
 $input-border-radius: $btn-border-radius;
 $input-padding-y: $btn-padding-y;
 $input-padding-x: $btn-padding-x;
 
+// General styles
+
+// Accordion styles
 .accordion-item {
-  border-left: 0 !important;
-  border-right: 0 !important;
+  border-left: 0 !important; // Remove left border
+  border-right: 0 !important; // Remove right border
 }
 
+// Accordion styles for mobile
+@media (max-width: 576px) {
+  .accordion-item {
+    width: 100%;
+  }
+}
+
+// Card custom styles
 .card-custom {
   box-shadow: $card-box-shadow;
   .card-body {
@@ -48,6 +63,7 @@ $input-padding-x: $btn-padding-x;
   margin-top: 4rem;
 }
 
+// Footer styles
 .footer-text {
   max-width: 400px;
 }
@@ -58,10 +74,25 @@ $input-padding-x: $btn-padding-x;
   border-radius: $input-border-radius;
 }
 
+// Footer styles for mobile
+@media (max-width: 576px) {
+  .footer-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .footer-button {
+    display: block;
+    width: 100%;
+  }
+}
+
+// Text center styles
 .text-center.w-50.mx-auto.mb-5 {
   max-width: 400px;
 }
 
+// Background figure styles
 .bg-figure {
   position: absolute;
   bottom: -25px;
@@ -86,16 +117,41 @@ $input-padding-x: $btn-padding-x;
   z-index: -1;
 }
 
+// Features section styles
 .features-section .border-secondary {
-  border-width: 5px !important;
-  border-color: $secondary !important;
+  border-width: 5px !important; // Increase border thickness
+  border-color: $secondary !important; // Set border color to secondary
   z-index: 3 !important;
 }
 
+// .bg-dark container styles for mobile
+@media (max-width: 576px) {
+  .bg-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bg-dark .bookmark-logo,
+  .bg-dark .features,
+  .bg-dark .pricing,
+  .bg-dark .contact {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .bg-dark .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+// Import Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
   font-family: "Rubik", sans-serif;
+  box-sizing: content-box;
 }
 
 h6 {
