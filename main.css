@@ -16,6 +16,14 @@
   margin: 3rem 0 2rem 0;
 }
 
+.card-custom.second {
+  margin-top: 2rem;
+}
+
+.card-custom.third {
+  margin-top: 4rem;
+}
+
 .footer-text {
   max-width: 400px;
 }
@@ -11643,4 +11651,15 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+h6, .h6 {
+  color: #6c757d;
+  padding: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.features-section .border-secondary {
+  border-width: 5px !important;
+  border-color: #fb5859 !important;
+  z-index: 3 !important;
 }/*# sourceMappingURL=main.css.map */
