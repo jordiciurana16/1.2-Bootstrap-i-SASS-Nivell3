@@ -42,6 +42,13 @@ $input-padding-x: $btn-padding-x;
   }
 }
 
+// Accordion container styles for desktop
+@media (min-width: 992px) {
+  .accordion-container {
+    width: 50%;
+  }
+}
+
 // Card custom styles
 .card-custom {
   box-shadow: $card-box-shadow;
@@ -163,8 +170,15 @@ $input-padding-x: $btn-padding-x;
   }
 }
 
+// Hide blue figure in hero section on mobile
+@media (max-width: 576px) {
+  .bg-figure {
+    display: none;
+  }
+}
+
 @media (min-width: 577px) {
-  .faq-paragraph {
+  .paragraph {
     width: 50%;
   }
 }

@@ -9,6 +9,11 @@
     width: 100%;
   }
 }
+@media (min-width: 992px) {
+  .accordion-container {
+    width: 50%;
+  }
+}
 .card-custom {
   box-shadow: 0 4px 8px rgba(80, 101, 220, 0.2);
 }
@@ -117,8 +122,13 @@
     width: 100%;
   }
 }
+@media (max-width: 576px) {
+  .bg-figure {
+    display: none;
+  }
+}
 @media (min-width: 577px) {
-  .faq-paragraph {
+  .paragraph {
     width: 50%;
   }
 }
