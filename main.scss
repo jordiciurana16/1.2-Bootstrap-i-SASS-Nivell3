@@ -177,6 +177,13 @@ $input-padding-x: $btn-padding-x;
   }
 }
 
+// Hide blue figure2 in other section on mobile
+@media (max-width: 576px) {
+  .bg-figure-2 {
+    display: none;
+  }
+}
+
 @media (min-width: 577px) {
   .paragraph {
     width: 50%;
