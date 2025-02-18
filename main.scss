@@ -233,3 +233,52 @@ h6 {
   padding: 1rem 0;
   line-height: 1.5rem;
 }
+
+// Nav item styles
+$nav-item-border: none;
+$nav-item-border-radius: 0;
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .nav-item {
+    flex: 1;
+    text-align: center;
+    .nav-link {
+      border: $nav-item-border !important;
+      border-radius: $nav-item-border-radius !important;
+    }
+    &:first-child .nav-link {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid $secondary;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-tabs {
+    flex-direction: column;
+    .nav-item {
+      margin-bottom: 0.5rem;
+      &:not(:last-child)::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+      }
+    }
+    .nav-item:first-child .nav-link::after {
+      left: 25%;
+      width: 50%;
+      border-bottom-color: $secondary;
+    }
+  }
+}

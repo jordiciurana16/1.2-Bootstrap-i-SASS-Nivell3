@@ -11764,4 +11764,49 @@ h6, .h6 {
   color: #6c757d;
   padding: 1rem 0;
   line-height: 1.5rem;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav-tabs .nav-item {
+  flex: 1;
+  text-align: center;
+}
+.nav-tabs .nav-item .nav-link {
+  border: none !important;
+  border-radius: 0 !important;
+}
+.nav-tabs .nav-item:first-child .nav-link {
+  position: relative;
+}
+.nav-tabs .nav-item:first-child .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #fb5859;
+}
+
+@media (max-width: 576px) {
+  .nav-tabs {
+    flex-direction: column;
+  }
+  .nav-tabs .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  .nav-tabs .nav-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+  .nav-tabs .nav-item:first-child .nav-link::after {
+    left: 25%;
+    width: 50%;
+    border-bottom-color: #fb5859;
+  }
 }/*# sourceMappingURL=main.css.map */
