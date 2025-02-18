@@ -63,15 +63,15 @@ $input-padding-x: $btn-padding-x;
   margin-top: 4rem;
 }
 
-// Footer styles
-.footer-text {
-  max-width: 400px;
-}
-
 .footer-input {
   padding: $input-padding-y $input-padding-x;
-  max-width: 300px;
   border-radius: $input-border-radius;
+}
+
+@media (min-width: 577px) {
+  .footer-input {
+    max-width: 300px;
+  }
 }
 
 // Footer styles for mobile
@@ -131,7 +131,9 @@ $input-padding-x: $btn-padding-x;
     flex-direction: column;
     align-items: center;
   }
-  .bg-dark .bookmark-logo,
+  .bg-dark .bookmark-logo {
+    margin-bottom: 2rem; // Add more space between logo and links
+  }
   .bg-dark .features,
   .bg-dark .pricing,
   .bg-dark .contact {
@@ -143,15 +145,42 @@ $input-padding-x: $btn-padding-x;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 2rem; // Add more space between social media and links
+  }
+}
+
+// Hero section styles for mobile
+@media (max-width: 576px) {
+  .row.align-items-end {
+    flex-direction: column-reverse;
+  }
+}
+
+// Paragraph styles for mobile
+@media (max-width: 576px) {
+  .faq-paragraph {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) {
+  .faq-paragraph {
+    width: 50%;
   }
 }
 
 // Import Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Rubik", sans-serif;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 h6 {
