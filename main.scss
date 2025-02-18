@@ -161,6 +161,23 @@ $input-padding-x: $btn-padding-x;
   .row.align-items-end {
     flex-direction: column-reverse;
   }
+  .hero-container {
+    position: relative;
+    padding: 0; // Remove padding
+  }
+  .hero-container .bg-figure {
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-color: $primary;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    z-index: -1;
+    margin-bottom: 320px; // Add margin-top to adjust position
+  }
 }
 
 // Paragraph styles for mobile
@@ -181,6 +198,13 @@ $input-padding-x: $btn-padding-x;
 @media (max-width: 576px) {
   .bg-figure-2 {
     display: none;
+  }
+}
+
+// Hide "More Info" button in "Bookmark in one click" section on mobile
+@media (max-width: 576px) {
+  .bookmark-more-info-btn {
+    display: none !important;
   }
 }
 

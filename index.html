@@ -59,11 +59,11 @@
     </header>
 
     <main>
-      <div class="position-relative pt-5">
-        <section class="container px-5">
+      <div class="position-relative pt-5 hero-container">
+        <section class="px-md-5 container">
           <div class="row align-items-end">
             <div
-              class="col-md-6 pb-5 d-flex flex-column justify-content-end text-center text-md-start"
+              class="col-md-6 pt-5 pt-md-0 pb-5 d-flex flex-column justify-content-end text-center text-md-start"
             >
               <h1>A Simple Bookmark Manager</h1>
               <h6>
@@ -71,7 +71,9 @@
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
               </h6>
-              <div class="d-flex">
+              <div
+                class="d-flex justify-content-center justify-content-md-start mt-4"
+              >
                 <button class="btn btn-primary me-2 text-white">
                   Get it on Chrome
                 </button>
@@ -90,8 +92,8 @@
               </div>
             </div>
           </div>
-          <div class="bg-figure"></div>
         </section>
+        <div class="bg-figure"></div>
       </div>
       <div class="position-relative">
         <section class="container px-5 mt-5 features-section">
@@ -134,8 +136,14 @@
                 drag-and-drop interface gives you complete control over how you
                 manage your favourites sites.
               </h6>
-              <div class="d-flex justify-content-center justify-content-md-end">
-                <button class="btn btn-primary text-white">More Info</button>
+              <div
+                class="d-flex justify-content-center justify-content-md-start"
+              >
+                <button
+                  class="btn btn-primary text-white bookmark-more-info-btn"
+                >
+                  More Info
+                </button>
               </div>
             </div>
           </div>
