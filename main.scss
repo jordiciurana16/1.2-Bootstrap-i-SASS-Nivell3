@@ -22,201 +22,18 @@ $card-box-shadow: 0 4px 8px rgba($primary, 0.2);
 $input-border-radius: $btn-border-radius;
 $input-padding-y: $btn-padding-y;
 $input-padding-x: $btn-padding-x;
+
 $navbar-toggler-border-color: transparent;
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='15'%3E%3Cpath fill='%23242A45' fill-rule='evenodd' d='M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z'/%3E%3C/svg%3E") !important;
-}
-
-.navbar-toggler {
-  border: none !important;
-  border-radius: 0 !important;
-}
+$navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='15'%3E%3Cpath fill='%23242A45' fill-rule='evenodd' d='M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z'/%3E%3C/svg%3E");
 
 $accordion-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12'%3E%3Cpath fill='none' stroke='%235267DF' stroke-width='3' d='M1 1l8 8 8-8'/%3E%3C/svg%3E");
 
-.accordion-button::after {
-  background-image: $accordion-button-icon;
-}
+$accordion-item-border: none;
+$accordion-item-border-radius: 0;
 
-.accordion-item {
-  border-left: 0 !important;
-  border-right: 0 !important;
-}
+$nav-item-border: none;
+$nav-item-border-radius: 0;
 
-@media (max-width: 576px) {
-  .accordion-item {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .accordion-container {
-    width: 50%;
-  }
-}
-
-.card-custom {
-  box-shadow: $card-box-shadow;
-  .card-body {
-    padding: 2rem 0;
-  }
-  hr.dotted {
-    border: 0;
-    border-top: 7px dotted rgb(201, 201, 201);
-    margin: 3rem 0 2rem 0;
-  }
-}
-
-.card-custom.second {
-  margin-top: 2rem;
-}
-
-.card-custom.third {
-  margin-top: 4rem;
-}
-
-.footer-input {
-  padding: $input-padding-y $input-padding-x;
-  border-radius: $input-border-radius;
-}
-
-@media (min-width: 577px) {
-  .footer-input {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer-input {
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  .footer-button {
-    display: block;
-    width: 100%;
-  }
-}
-
-.text-center.w-50.mx-auto.mb-5 {
-  max-width: 400px;
-}
-
-.bg-figure {
-  position: absolute;
-  bottom: -25px;
-  right: 0;
-  width: 500px;
-  height: 300px;
-  background-color: $primary;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  z-index: -1;
-}
-
-.bg-figure-2 {
-  position: absolute;
-  left: 0;
-  bottom: -75px;
-  width: 500px;
-  height: 300px;
-  background-color: $primary;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  z-index: -1;
-}
-
-.features-section .border-secondary {
-  border-width: 5px !important;
-  border-color: $secondary !important; // Set border color to secondary
-  z-index: 3 !important;
-}
-
-// .bg-dark container styles for mobile
-@media (max-width: 576px) {
-  .bg-dark {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .bg-dark .bookmark-logo {
-    margin-bottom: 2rem; // Add more space between logo and links
-  }
-  .bg-dark .features,
-  .bg-dark .pricing,
-  .bg-dark .contact {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .bg-dark .icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem; // Add more space between social media and links
-  }
-}
-
-// Hero section styles for mobile
-@media (max-width: 576px) {
-  .row.align-items-end {
-    flex-direction: column-reverse;
-  }
-  .hero-container {
-    position: relative;
-    padding: 0; // Remove padding
-  }
-  .hero-container .bg-figure {
-    display: block;
-    position: absolute;
-    bottom: -25px;
-    right: 0;
-    width: 300px;
-    height: 200px;
-    background-color: $primary;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    z-index: -1;
-    margin-bottom: 320px; // Add margin-top to adjust position
-  }
-}
-
-// Paragraph styles for mobile
-@media (max-width: 576px) {
-  .faq-paragraph {
-    width: 100%;
-  }
-}
-
-// Hide blue figure in hero section on mobile
-@media (max-width: 576px) {
-  .bg-figure {
-    display: none;
-  }
-}
-
-// Hide blue figure2 in other section on mobile
-@media (max-width: 576px) {
-  .bg-figure-2 {
-    display: none;
-  }
-}
-
-// Hide "More Info" button in "Bookmark in one click" section on mobile
-@media (max-width: 576px) {
-  .bookmark-more-info-btn {
-    display: none !important;
-  }
-}
-
-@media (min-width: 577px) {
-  .paragraph {
-    width: 50%;
-  }
-}
-
-// Import Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
 *,
@@ -236,23 +53,64 @@ h6 {
   line-height: 1.5rem;
 }
 
-// Nav item styles
-$nav-item-border: none;
-$nav-item-border-radius: 0;
+.footer-button,
+.footer-input {
+  letter-spacing: normal;
+}
+
+.footer-input {
+  padding: $input-padding-y $input-padding-x;
+  border-radius: $input-border-radius;
+}
+
+.card-custom {
+  box-shadow: $card-box-shadow;
+
+  .card-body {
+    padding: 2rem 0;
+  }
+
+  hr.dotted {
+    border: 0;
+    border-top: 7px dotted rgb(201, 201, 201);
+    margin: 3rem 0 2rem 0;
+  }
+}
+
+.card-custom.second {
+  margin-top: 2rem;
+}
+
+.card-custom.third {
+  margin-top: 4rem;
+}
+
+.navbar-toggler {
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: $navbar-toggler-icon-bg;
+}
 
 .nav-tabs {
   display: flex;
   justify-content: center;
   width: 100%;
+
   .nav-item {
     flex: 1;
     text-align: center;
+
     .nav-link {
-      border: $nav-item-border !important;
-      border-radius: $nav-item-border-radius !important;
+      border: $nav-item-border;
+      border-radius: $nav-item-border-radius;
     }
+
     &:first-child .nav-link {
       position: relative;
+
       &::after {
         content: "";
         position: absolute;
@@ -265,18 +123,152 @@ $nav-item-border-radius: 0;
   }
 }
 
+.accordion-button::after {
+  background-image: $accordion-button-icon;
+}
+
+.accordion-item {
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+}
+
+.bg-figure,
+.bg-figure-2 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: $primary;
+  z-index: -1;
+}
+
+.bg-figure {
+  bottom: -25px;
+  right: 0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.bg-figure-2 {
+  left: 0;
+  bottom: -75px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+// Secció de funcionalitats
+.features-section .border-secondary {
+  border-width: 5px;
+  border-color: $secondary;
+  z-index: 3;
+}
+
 @media (max-width: 576px) {
+  .accordion-item {
+    width: 100%;
+  }
+
+  .footer-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .footer-button {
+    display: block;
+    width: 100%;
+  }
+
+  .bg-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bookmark-logo {
+      margin-bottom: 2rem;
+    }
+
+    .features,
+    .pricing,
+    .contact {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .row.align-items-end {
+    flex-direction: column-reverse;
+  }
+
+  .hero-container {
+    position: relative;
+    padding: 0;
+
+    .bg-figure {
+      display: block;
+      position: absolute;
+      bottom: -25px;
+      right: 0;
+      width: 300px;
+      height: 200px;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      margin-bottom: 320px;
+    }
+
+    .bg-figure-2 {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      width: 300px;
+      height: 200px;
+      top: 40%;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+  }
+
+  .faq-paragraph {
+    width: 100%;
+  }
+
+  .bg-figure {
+    display: none;
+  }
+
+  .bg-figure-2 {
+    width: 300px;
+    height: 200px;
+    top: 500px;
+  }
+
+  .bookmark-more-info-btn {
+    display: none;
+  }
+
   .nav-tabs {
     flex-direction: column;
+
     .nav-item {
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
+
       &:not(:last-child)::after {
         content: "";
         display: block;
         width: 100%;
       }
     }
+
     .nav-item:first-child .nav-link::after {
       left: 25%;
       width: 50%;
@@ -285,9 +277,24 @@ $nav-item-border-radius: 0;
   }
 }
 
-.navbar-nav .nav-link,
-.bg-dark .list-unstyled li {
-  letter-spacing: 0.15rem;
+@media (min-width: 577px) {
+  .footer-input {
+    max-width: 300px;
+  }
+
+  .paragraph {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .accordion-container {
+    width: 50%;
+  }
+}
+
+.text-center.w-50.mx-auto.mb-5 {
+  max-width: 400px;
 }
 
 .footer-text.no-spacing {
@@ -298,7 +305,7 @@ $nav-item-border-radius: 0;
   letter-spacing: 0.15rem;
 }
 
-.footer-button,
-.footer-input {
-  letter-spacing: normal;
+.navbar-nav .nav-link,
+.bg-dark .list-unstyled li {
+  letter-spacing: 0.15rem;
 }
