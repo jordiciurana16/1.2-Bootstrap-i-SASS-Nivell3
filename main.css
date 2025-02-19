@@ -11822,4 +11822,21 @@ h6, .h6 {
     width: 50%;
     border-bottom-color: #fb5859;
   }
+}
+.navbar-nav .nav-link,
+.bg-dark .list-unstyled li {
+  letter-spacing: 0.15rem;
+}
+
+.footer-text.no-spacing {
+  letter-spacing: normal;
+}
+
+.footer-text.spacing {
+  letter-spacing: 0.15rem;
+}
+
+.footer-button,
+.footer-input {
+  letter-spacing: normal;
 }/*# sourceMappingURL=main.css.map */
